@@ -1,10 +1,13 @@
 
-# express-bem-bemtree [![Build Status](https://travis-ci.org/zxqfox/express-bem-bemtree.svg)](https://travis-ci.org/zxqfox/express-bem-bemtree) [![Dependency Status](https://david-dm.org/zxqfox/express-bem-bemtree.png)](https://david-dm.org/zxqfox/express-bem-bemtree)
+# express-bem-bemtree
+
+[![Build Status](https://travis-ci.org/express-bem/bemtree.svg)](https://travis-ci.org/express-bem/bemtree)
+ [![Dependency Status](https://david-dm.org/express-bem/bemtree.png)](https://david-dm.org/express-bem/bemtree)
 
 [bemtree.js][] engine (plugin) for [express-bem][]
 
 [bemtree.js]: https://github.com/bem/bem-core
-[express-bem]: https://github.com/zxqfox/express-bem
+[express-bem]: https://github.com/express-bem/express-bem
 
 ## Why
 
@@ -33,4 +36,4 @@ bem.usePlugin('express-bem-bemtree');
 
 MIT [License][]
 
-[License]: https://github.com/zxqfox/express-bem-bemtree/blob/master/LICENSE
+[License]: https://github.com/express-bem/bemtree/blob/master/LICENSE
