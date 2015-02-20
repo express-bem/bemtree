@@ -8,20 +8,21 @@ describe('basic renders', function () {
         root: 'test/data/views',
         path: 'pages'
     };
-    var options = {
+    var data = {
         block: 'page',
         title: 'Testing testing',
         index: true,
         contacts: []
     };
 
-    it('should generate html page with bemhtml', function (done) {
+    it('should generate html page with bemtree', function (done) {
         var app = EXPRESS();
         var bem = EXPRESSBEM(bemOpts).bindTo(app);
-        bem.usePlugin(EXPRESSBEMTREE);
+        bem.usePlugin(EXPRESSBEMTREE, {source: '_?.bemtree.js'});
 
-        app.render('custom', options, function (err, bemjson) {
-            ASSERT(JSON.stringify(bemjson).indexOf(options.title) !== -1);
+        app.render('custom', data, function (err, bemjson) {
+            ASSERT.ifError(err);
+            ASSERT(JSON.stringify(bemjson).indexOf(data.title) !== -1);
             done();
         });
     });
